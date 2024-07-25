@@ -1,0 +1,125 @@
+@import 'styles-colors.css';
+/*Header*/
+
+header{
+    padding-top: 10rem;
+    text-align: center;
+    background: linear-gradient(to right, hsla(212, 10%, 29%, 0.636), hsla(210, 5%, 85%, 0.701)), url(background/cover.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+header>h2{
+    font-size:40px;
+    margin-bottom: 2rem;
+}
+
+header>h4{
+    font-size: 35px;
+}
+
+.wave-container {
+    padding-top: 10rem;
+    height: 5rem; 
+    overflow: hidden;
+    bottom: 0;
+    width: 100%;
+}
+
+.wave{
+    stroke: none; 
+    fill: var(--bg);
+    transition: fill 500ms ease-in-out;
+}
+
+/*Navbar*/
+.navbar{
+    text-align: right;
+    background: var(--bg-nav);
+    position:fixed;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    transition: background 500ms ease-in-out;
+}
+.navbar>h2{
+    margin: 0;
+}
+.nav-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size:x-large;
+    margin-right: 2rem;  
+}
+
+a{
+    color:currentColor;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.nav-item>button{
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    background-color:#F9E130;
+    border-color: gray;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+.nav-item>button:hover{
+    background-color: #FFF6B6;
+}
+
+.nav-links, .dropdown{
+    list-style-type: none;
+}
+
+/*Theme Dropdown*/
+
+.dropdown-item a{
+    width: 100%;
+    height: 100%;
+    size: 0.7rem;
+    padding-left: 1rem;
+    font-weight: bold;
+}
+
+.dropdown-item a::before{
+    content: '';
+    border: 2px solid var(--border-color);
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+#theme-dropdown-selector {
+    display: none;
+    position: absolute;
+    opacity: 0;
+    width: 20rem;
+    z-index: 2;
+    background: var(--bg-dropdown);
+    border-top: 0.1rem solid var(--border-color);
+    border-bottom-right-radius: 0.2rem;
+    border-bottom-left-radius: 0.2rem;
+    align-items: center;
+    justify-content: space-around;
+    height: 3rem;
+    margin-top: 3.2rem;
+    padding: 0.5rem;
+    box-shadow: rgba(2,8,20,0.1) 0px 0.175em 0.5em;
+    transform: translateX(-90%);
+    transition: opacity 0.5s ease-in-out;
+}
+
+#theme-dropdown-selector.show {
+    opacity: 1;
+}
