@@ -10,7 +10,7 @@
     <title>Workflow</title>
 </head>
 <body class="light">
-    <nav class="navbar">
+    <nav class="navbar" id="nav-bar">
         <h2>Task Management</h2>
         <ul class="nav-links">
             <li class="nav-item">
@@ -32,10 +32,10 @@
                 <a onClick="openThemeDropdown(event)">Theme</a>
                 <ul class="dropdown" id="theme-dropdown-selector">
                     <li class="dropdown-item">
-                        <a id="light" href="#">Light</a>
+                        <a id="light">Light</a>
                     </li>
                     <li class="dropdown-item">
-                        <a id="dark" href="#">Dark</a>
+                        <a id="dark">Dark</a>
                     </li>
                 </ul>
             </li>
@@ -84,7 +84,38 @@
     </section>
 
     <section class="container">
-        
+        <div class="logo-phrase">
+            <p class="title">What do our clients say?</p>
+        </div>
+        <br>
+        <div class="clients">
+            <div class="client">
+                <img src="users/Renzo.jpg" alt="Renzo Quispe Palomino">
+                <div class="client-text">
+                    <h4>Renzo Quispe Palomino</h4>
+                    <p>Task Management helped me organize my team
+                        very efficiently
+                    </p>
+                </div>
+            </div>
+            <div class="client">
+                <img src="users/Cielo.jpg" alt="Cielo Ramirez Calderon">
+                <div class="client-text">
+                    <h4>Cielo Ramirez Calderon</h4>
+                    <p>Task Management helped my team and I to collaborate
+                        without any problems</p>
+                </div>
+            </div>
+
+            <div class="client">
+                <img src="users/Maria.jpg" alt="Maria Perez de la Cruz">
+                <div class="client-text">
+                    <h4>Maria Perez de la Cruz</h4>
+                    <p>Task Management helped me organize my homework and
+                        other school activites</p>
+                </div>
+            </div>
+        </div> 
     </section>
 </body>
 </html>

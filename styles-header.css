@@ -36,14 +36,17 @@ header>h4{
 /*Navbar*/
 .navbar{
     text-align: right;
-    background: var(--bg-nav);
     position:fixed;
     width:100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    transition: background 500ms ease-in-out;
+    background-image: var(--bg-nav);
+    background-size: 300%;
+    background-position: left;
+    transition: background-position 1s;
+    border-bottom: 0.125rem solid var(--border-color);
 }
 .navbar>h2{
     margin: 0;
@@ -66,13 +69,14 @@ a{
 .nav-item>button{
     margin: 1rem;
     padding: 0.5rem 1rem;
-    background-color:#F9E130;
+    background: var(--button);
     border-color: gray;
     border-radius: 0.4rem;
     cursor: pointer;
+    transition: background 500ms ease-in-out;
 }
 .nav-item>button:hover{
-    background-color: #FFF6B6;
+    background: var(--button-hover);
 }
 
 .nav-links, .dropdown{

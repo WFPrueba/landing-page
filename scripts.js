@@ -42,8 +42,12 @@ document.getElementById('theme-dropdown-selector').addEventListener('click', (ev
 
 darkButton.onclick = () => {
     body.classList.replace('light', 'dark');
+    const navbar = document.getElementById("nav-bar");
+    navbar.style.backgroundPosition = 'right';
 };
 
 lightButton.onclick = () => {
     body.classList.replace('dark', 'light');
+    const navbar = document.getElementById("nav-bar");
+    navbar.style.backgroundPosition = 'left';
 };

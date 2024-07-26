@@ -80,3 +80,39 @@ body{
     padding: 0;
     margin: 0;
 }
+
+/*Clients*/
+.clients{
+    display: flex;
+    justify-self: space-evenly;
+}
+.client{
+    background: var(--button);
+    display: flex;
+    width: 55%;
+    height: 200px;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+    padding: 20px; 
+    box-sizing: border-box;
+}
+.clients .client img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    display: block;
+}
+.client-text{
+    width: 60%;
+    color: #ffffff;
+}
+
+.text-content-face h4 {
+    margin-bottom: 10px; 
+    font-size: 18px; 
+    font-weight: bold; 
+}

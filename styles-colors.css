@@ -6,18 +6,26 @@
     --gray4: #454e56;
     --gray5: #2a2e35;
     --gray6: #12181b;
-    --blue: #0084a5;
+    --black: #000;
+    --red: #FF2525;
+    --yellow: #FFDE59;
+    --orange: #FFBD59;
+    --green: #00BF63;
+    --sky-blue: #8be8ff;
+    --light-blue: #0CC0DF;
+    --blue: #3943ff;
+    --indigo: #5E17EB;
     --purple: #a82dd1;
-    --yellow: #fff565;
 }
 
 .light{
     --bg: var(--gray0);
-    --bg-nav: var(--gray1);
+    --bg-nav: linear-gradient(to right, var(--gray1), var(--gray3), var(--gray4), var(--gray6));
     --bg-dropdown: var(--gray1);
     --text: var(--gray6);
-    --border-color: var(--blue);
-    --button: var(--blue);
+    --border-color: var(--gray4);
+    --button: var(--gray1);
+    --button-hover: var(--gray0);
 }
 
 #light::before {
@@ -27,11 +35,12 @@
 
 .dark{
     --bg: var(--gray5);
-    --bg-nav: var(--gray6);
+    --bg-nav: linear-gradient(to right, var(--gray1), var(--gray3), var(--gray4), var(--gray6));
     --bg-dropdown: var(--gray6);
     --text: var(--gray0);
-    --border-color: var(--purple);
-    --button: var(--purple);
+    --border-color: var(--light-blue);
+    --button: var(--light-blue);
+    --button-hover: var(--sky-blue);
 }
 
 #dark::before {
