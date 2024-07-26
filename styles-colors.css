@@ -22,8 +22,14 @@
     --bg: var(--gray0);
     --bg-nav: linear-gradient(to right, var(--gray1), var(--gray3), var(--gray4), var(--gray6));
     --bg-dropdown: var(--gray1);
+    --bg-shadow: var(--black);
+
     --text: var(--gray6);
-    --border-color: var(--gray4);
+    --text-inverted: var(--gray0);
+
+    --card: var(--gray4);
+    --border: var(--gray4);
+
     --button: var(--gray1);
     --button-hover: var(--gray0);
 }
@@ -37,8 +43,14 @@
     --bg: var(--gray5);
     --bg-nav: linear-gradient(to right, var(--gray1), var(--gray3), var(--gray4), var(--gray6));
     --bg-dropdown: var(--gray6);
+    --bg-shadow: var(--gray2);
+
     --text: var(--gray0);
-    --border-color: var(--light-blue);
+    --text-inverted: var(--gray6);
+
+    --card: var(--gray2);
+    --border: var(--light-blue);
+
     --button: var(--light-blue);
     --button-hover: var(--sky-blue);
 }

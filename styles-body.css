@@ -64,11 +64,12 @@ body{
     border-radius: 50%;
     display: inline-block;
     text-align: center;
-    width: 30px;
-    height: 30px;
-    padding: 2px;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    width: 20px;
+    height: 20px;
+    padding: 7px;
+    box-shadow: 0 0 6px 0 var(--bg-shadow);
     margin-right: 5px;
+    transition: box-shadow 500ms ease-in-out;
 }
 .text-content p {
     padding: 0px 0px 30px 15px;
@@ -87,7 +88,7 @@ body{
     justify-self: space-evenly;
 }
 .client{
-    background: var(--button);
+    background: var(--card);
     display: flex;
     width: 55%;
     height: 200px;
@@ -97,7 +98,9 @@ body{
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
     padding: 20px; 
     box-sizing: border-box;
+    transition: background 500ms ease-in-out;
 }
+
 .clients .client img{
     width: 100px;
     height: 100px;
@@ -106,9 +109,11 @@ body{
     border-radius: 50%;
     display: block;
 }
+
 .client-text{
     width: 60%;
-    color: #ffffff;
+    color: var(--text-inverted);
+    transition: color 1000ms ease-in-out;
 }
 
 .text-content-face h4 {

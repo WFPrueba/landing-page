@@ -46,7 +46,7 @@ header>h4{
     background-size: 300%;
     background-position: left;
     transition: background-position 1s;
-    border-bottom: 0.125rem solid var(--border-color);
+    border-bottom: 0.125rem solid var(--border);
 }
 .navbar>h2{
     margin: 0;
@@ -95,7 +95,7 @@ a{
 
 .dropdown-item a::before{
     content: '';
-    border: 2px solid var(--border-color);
+    border: 2px solid var(--border);
     border-radius: 50%;
     width: 2rem;
     height: 2rem;
@@ -111,7 +111,7 @@ a{
     width: 20rem;
     z-index: 2;
     background: var(--bg-dropdown);
-    border-top: 0.1rem solid var(--border-color);
+    border-top: 0.1rem solid var(--border);
     border-bottom-right-radius: 0.2rem;
     border-bottom-left-radius: 0.2rem;
     align-items: center;
