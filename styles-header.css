@@ -82,13 +82,14 @@ a{
 }
 
 .nav-item>button{
+    color: var(--text);
     margin: 1rem;
     padding: 0.5rem 1rem;
     background: var(--button);
-    border-color: gray;
+    border-color: var(--border);
     border-radius: 0.4rem;
     cursor: pointer;
-    transition: background 500ms ease-in-out;
+    transition: background 500ms ease-in-out, color 1000ms ease-in-out, border 500ms ease-in-out;
 }
 .nav-item>button:hover{
     background: var(--button-hover);
