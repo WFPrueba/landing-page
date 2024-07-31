@@ -1,0 +1,107 @@
+@import 'styles-colors.css';
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*Titles and Subtitles*/
+.title-container {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+    /*Title*/
+.title-container>h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+    /*Subtitle*/
+.title-container>p {
+    font-size: 35px;
+}
+
+    /*Workflow name*/
+.title-container>.workflow-name {
+    font-size: 70px;
+    font-weight: bolder;
+    margin-bottom: 3rem;
+}
+
+/*Containers*/
+.container {
+    padding: 5rem 0;
+    width: 100%;
+    max-width: 80vw;
+    margin: auto;
+    overflow: hidden;
+}
+
+/*Cards*/
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card {
+    width: 22em;
+    height: 22em;
+    margin-bottom: 4em;
+    overflow: hidden;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0 0 6px 0 var(--bg-shadow);
+}
+
+.card-header{
+    display: flex;
+    justify-content: center;
+}
+
+.card-header>h1{
+    font-size: x-large;
+    padding: 0.5em;
+}
+
+.card-icon-fill{
+    width: 1.5em; 
+    height: 1.5em;
+    fill: var(--text);
+    stroke: none;
+    transition: fill 500ms ease-in-out;
+}
+
+.card-icon-stroke{
+    width: 1.5em; 
+    height: 1.5em;
+    fill: none;
+    stroke: var(--text);
+    transition: stroke 500ms ease-in-out;
+}
+
+.card-content {
+    background: var(--card);
+    height: 100%;
+    transition: background 500ms ease-in-out;
+}
+
+.card-content>img {
+    width: 100%;
+    max-height: 50%;
+    background: white;
+}
+
+.card-content-image-only>img {
+    width: 100%;
+    height: 100%;
+}
+
+.card-content>p {
+    text-align: justify;
+    margin: 0.4em;
+}
