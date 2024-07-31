@@ -125,9 +125,10 @@
 }
 
 .descriptive-card-header{
-    background: var(--card-header);
+    background-image: var(--primary-gradient);
     background-size: 300%;
-    transition: background 1s ease-in-out;
+    background-position: left;
+    transition: background-position 1s;
 }
 
 .descriptive-card-header>h1{
@@ -137,7 +138,7 @@
 }
 
 .descriptive-card-content {
-    background: var(--descriptive-card);
+    background: var(--card);
     height: 100%;
     transition: background 500ms ease-in-out;
 }

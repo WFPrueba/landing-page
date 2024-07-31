@@ -10,30 +10,24 @@
     --black: #000;
 
     /*Other Colors*/
-    --red: #FF2525;
-    --yellow: #FFDE59;
-    --orange: #FFBD59;
-    --green: #00BF63;
-    --sky-blue: #8be8ff;
-    --light-blue: #0CC0DF;
+    --sky-blue: #74b3fb;
+    --light-blue: #0fc4e4;
     --blue: #3943ff;
-    --marine-blue: #2f58d1;
-    --indigo: #5E17EB;
-    --purple: #a82dd1;
+    --marine-blue: #4b78ff;
+    --dark-blue: #27345e;
+    --night-blue: #171625;
 }
 
 .light{
     --bg: var(--gray0);
-    --primary-gradient: linear-gradient(to right, var(--gray0), var(--gray2), var(--gray4), var(--gray6));
+    --primary-gradient: linear-gradient(to right, var(--light-blue), var(--marine-blue), var(--dark-blue), var(--gray6));
     --bg-dropdown: var(--gray1);
     --bg-shadow: var(--gray6);
 
     --text: var(--gray6);
     --text-inverted: var(--gray0);
 
-    --card: var(--gray2);
-    --descriptive-card: var(--gray1);
-    --card-header: var(--gray0);
+    --card: var(--gray0);
     --border: var(--gray4);
 
     --button: var(--gray1);
@@ -46,17 +40,15 @@
 
 
 .dark{
-    --primary-gradient: linear-gradient(to right, var(--gray0), var(--gray2), var(--gray4), var(--gray6));
-    --bg: var(--gray5);
+    --primary-gradient: linear-gradient(to right, var(--light-blue), var(--marine-blue), var(--dark-blue), var(--gray6));
+    --bg: var(--gray6);
     --bg-dropdown: var(--gray6);
     --bg-shadow: var(--gray2);
 
     --text: var(--gray0);
     --text-inverted: var(--gray6);
 
-    --card: var(--gray4);
-    --descriptive-card: var(--gray4);
-    --card-header: var(--marine-blue);
+    --card: var(--gray5);
     --border: var(--marine-blue);
 
     --button: var(--marine-blue);
