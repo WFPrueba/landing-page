@@ -49,8 +49,8 @@
 }
 
 .card {
-    width: 22em;
-    height: 22em;
+    width: 23em;
+    height: 23em;
     margin-bottom: 4em;
     overflow: hidden;
     box-sizing: border-box;
@@ -61,6 +61,7 @@
 .card-header{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .card-header>h1{
@@ -103,5 +104,46 @@
 
 .card-content>p {
     text-align: justify;
-    margin: 0.4em;
+    margin: 0.6em;
+}
+
+/*Descriptive Cards*/
+.descriptive-card-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    align-items: center;
+}
+
+.descriptive-card {
+    width: 90%;
+    height: 14rem;
+    margin-bottom: 4em;
+    overflow: hidden;
+    box-sizing: border-box;
+    box-shadow: 0 0 6px 0 var(--bg-shadow);
+}
+
+.descriptive-card-header{
+    background: var(--card-header);
+    background-size: 300%;
+    transition: background 1s ease-in-out;
+}
+
+.descriptive-card-header>h1{
+    text-align: center;
+    font-size: x-large;
+    padding: 1em;
+}
+
+.descriptive-card-content {
+    background: var(--descriptive-card);
+    height: 100%;
+    transition: background 500ms ease-in-out;
+}
+
+
+.descriptive-card-content>p {
+    text-align: justify;
+    padding: 1.5em;
 }
