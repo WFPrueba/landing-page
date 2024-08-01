@@ -121,7 +121,25 @@
     margin-bottom: 4em;
     overflow: hidden;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
     box-shadow: 0 0 6px 0 var(--bg-shadow);
+}
+
+.descriptive-card-add-on-side{
+    height: 100%;
+    width: 20%;
+    border-right: 0.2em solid var(--border);
+}
+
+.descriptive-card-add-on-side>img{
+    height: 100%;
+    width: 100%;
+}
+
+.descriptive-card-main-side{
+    width: 100%;
+    height: 100%;
 }
 
 .descriptive-card-header{
@@ -142,7 +160,6 @@
     height: 100%;
     transition: background 500ms ease-in-out;
 }
-
 
 .descriptive-card-content>p {
     text-align: justify;

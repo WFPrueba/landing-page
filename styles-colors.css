@@ -42,7 +42,7 @@
 .dark{
     --primary-gradient: linear-gradient(to right, var(--light-blue), var(--marine-blue), var(--dark-blue), var(--gray6));
     --bg: var(--gray6);
-    --bg-dropdown: var(--gray6);
+    --bg-dropdown: var(--gray5);
     --bg-shadow: var(--gray2);
 
     --text: var(--gray0);
