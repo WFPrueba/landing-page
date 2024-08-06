@@ -32,6 +32,8 @@
 
     --button: var(--gray1);
     --button-hover: var(--gray0);
+
+    --footer: var(--gray2);
 }
 
 #light::before {
@@ -53,6 +55,8 @@
 
     --button: var(--marine-blue);
     --button-hover: var(--sky-blue);
+
+    --footer: var(--gray6);
 }
 
 #dark::before {

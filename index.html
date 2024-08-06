@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles-common.css">
     <link rel="stylesheet" href="styles-header.css">
+    <link rel="stylesheet" href="styles-home.css">
     <link rel="stylesheet" href="styles-body.css">
     <link rel="stylesheet" href="styles-footer.css">
     <script defer src="scripts.js"></script>
@@ -14,7 +15,37 @@
 </head>
 <body class="light">
     <nav class="navbar background-primary-gradient" id="nav-bar">
-        <h2>Task Management</h2>
+        <h2 class="nav-bar-logo">Task Management</h2>
+        <ul class="sidebar">
+            <li class="sidebar-item">
+                <a href="#services">Services</a>
+            </li>
+            <li class="sidebar-item">
+                <a href="#about-us">About Us</a>
+            </li>
+            <li class="sidebar-item">
+                <a href="#about-the-product">About the Product</a>
+            </li>
+            <li class="sidebar-item">
+                <a href="#contact-us">Contact Us</a>
+            </li>
+            <li class="sidebar-item">
+                <a onClick="openThemeDropdown(event)">Theme</a>
+                <ul class="dropdown" id="theme-dropdown-selector">
+                    <li class="dropdown-item">
+                        <a id="light">Light</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a id="dark">Dark</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="sidebar-item">
+                <button>
+                    <h2>Open App</h2>
+                </button>
+            </li>
+        </ul>
         <ul class="nav-links">
             <li class="nav-item">
                 <a href="#home">Home</a>
@@ -31,7 +62,7 @@
             <li class="nav-item">
                 <a href="#contact-us">Contact Us</a>
             </li>
-            <li class="nav-item theme-dropdown">
+            <li class="nav-item">
                 <a onClick="openThemeDropdown(event)">Theme</a>
                 <ul class="dropdown" id="theme-dropdown-selector">
                     <li class="dropdown-item">
@@ -232,8 +263,7 @@
                 </header>
                 <div class="card-content">
                     <img src="background/service2.jpg" alt="Transparent Comunication">
-                    <p>Facilitates transparent communication between distributed teams. 
-                        Our platform offers integrated tools for instant messaging, video 
+                    <p> Our platform offers integrated tools for instant messaging, video 
                         conferencing and file sharing, improving collaboration and reducing 
                         the barriers of distance.</p>
                 </div>
@@ -318,26 +348,26 @@
     </section>
 
     <section class="container" id="about-the-product" aria-label="About the Product Container">
-
+        
     </section>
 
-    <footer aria-label="Contacts Footer" class="background-primary-gradient">
-        <div class="footer-container">
-            <div class="footer-content">
+    <footer class="footer-section background-primary-gradient" aria-label="Contacts Footer">
+        <main class="footer-container">
+            <section class="footer-content">
                 <h4>Phone</h4>
                 <p>(+51) 999 888 777</p>
-            </div>
-            <div class="footer-content">
+            </section>
+            <section class="footer-content">
                 <h4>Email</h4>
                 <p>taskmanagement@gmail.com</p>
-            </div>
-            <div class="footer-content">
+            </section>
+            <section class="footer-content">
                 <h4>Location</h4>
                 <p>Jr. Bodegones 291, Santiago de Surco 15039</p>
-            </div>
-        </div>
+            </section>
+        </main>
         <div class="copyright-footer">
-            <h2>&copy;Task Management </h2>
+            <h3>&copy;Task Management </h3>
         </div>
     </footer>
 </body>

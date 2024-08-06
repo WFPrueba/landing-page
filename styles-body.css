@@ -98,3 +98,18 @@ body{
     font-size: 18px; 
     font-weight: bold; 
 }
+
+@media only screen and (max-width: 600px){
+    /*Logo*/
+    .logo{
+        width: 60%;
+        height: 60%;
+    }
+
+    .aboutUs-image {
+        display: none;
+    }
+    .text-content h3 span{
+        margin-left: 0.5rem;
+    }
+}

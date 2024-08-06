@@ -1,89 +1,61 @@
-@import 'styles-colors.css';
-/*Header*/
-
-#home{
-    z-index: -2;
-    padding-top: 10rem;
-    text-align: center;
-    background: url(background/cover.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    color: white;
-    position: relative;
-}
-
-#home::before{
-    z-index: -1;
-    position: absolute;
-    content: "";
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: hsla(214, 10%, 14%, 0.636);
-}
-
-#home>h2{
-    font-size:40px;
-    margin-bottom: 2rem;
-}
-
-#home>h4{
-    font-size: 35px;
-}
-
-.wave-container {
-    z-index: 0;
-    padding-top: 10rem;
-    height: 5rem; 
-    overflow: hidden;
-    bottom: 0;
-    width: 100%;
-}
-
-.wave{
-    stroke: none; 
-    fill: var(--bg);
-    transition: fill 500ms ease-in-out;
-}
-
 /*Navbar*/
 .navbar{
+
+    /*Position*/
     z-index: 1;
-    text-align: right;
     position:fixed;
     width:100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
+
+    /*Text Styles*/
+    text-align: right;
+
+    /*Background Color*/
     background-image: var(--primary-gradient);
     background-size: 300%;
     background-position: left;
     transition: background-position 1s;
+
+    /*Aditional Details*/
     border-bottom: 0.125rem solid var(--border);
 }
-.navbar>h2{
+
+.nav-bar-logo{
     margin: 0;
 }
+
 .nav-links {
     display: flex;
     gap: 20px;
     align-items: center;
     font-size:x-large;
-    margin-right: 2rem;  
+    margin-right: 2rem;
 }
 
-a{
+.nav-item {
+    height: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+a {
     color:currentColor;
     text-decoration: none;
     cursor: pointer;
     font-size: 20px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .nav-item>button{
+    display: flex;
+    align-items: center;
     color: var(--text);
-    margin: 1rem;
     padding: 0.5rem 1rem;
     background: var(--button);
     border-color: var(--border);
@@ -91,12 +63,27 @@ a{
     cursor: pointer;
     transition: background 500ms ease-in-out, color 1000ms ease-in-out, border 500ms ease-in-out;
 }
+
 .nav-item>button:hover{
     background: var(--button-hover);
 }
 
 .nav-links, .dropdown{
     list-style-type: none;
+}
+
+/*Sidebar*/
+.sidebar {
+    display: none;
+}
+
+.sidebar-item {
+    height: 100%;
+    width: 100%;
+}
+
+a:hover{
+    background-color: white;
 }
 
 /*Theme Dropdown*/
@@ -142,4 +129,35 @@ a{
 
 #theme-dropdown-selector.show {
     opacity: 1;
+}
+
+@media only screen and (max-width: 600px){
+    .navbar{
+        top: 0;
+        width: 100vw;
+        height: 5rem;
+    }
+
+    .home-link, #home{
+        display: none;
+    }
+
+    .sidebar{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: 0;
+        gap: 20px;
+        height: 100vh;
+        width: 100vw;
+        z-index: 100;
+        align-items: flex-start;
+        justify-content: flex-start;
+        background-image: var(--primary-gradient);
+    }
+
+    .sidebar-item{
+        width: 100%;
+    }
 }
