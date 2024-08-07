@@ -1,19 +1,23 @@
 /*Navbar*/
 .navbar{
 
+    /*Size*/
+    width:100%;
+
     /*Position*/
     z-index: 1;
     position:fixed;
-    width:100%;
+    padding: 0 20px;
+
+    /*Alignment*/
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
 
-    /*Text Styles*/
+    /*Text*/
     text-align: right;
 
-    /*Background Color*/
+    /*Background*/
     background-image: var(--primary-gradient);
     background-size: 300%;
     background-position: left;
@@ -28,14 +32,18 @@
 }
 
 .nav-links {
+    
+    /*Alignment*/
     display: flex;
-    gap: 20px;
     align-items: center;
-    font-size:x-large;
     margin-right: 2rem;
+    gap: 20px;
+
+    /*Text*/
+    font-size:x-large;
 }
 
-.nav-item {
+.nav-item, .nav-sidebar-toggle {
     height: 5rem;
     display: flex;
     align-items: center;
@@ -86,6 +94,13 @@ a:hover{
     background-color: white;
 }
 
+.sidebar-toggle-button{
+    display: none;
+    height: 24px;
+    width: 24px; 
+    fill: var(--text);
+}
+
 /*Theme Dropdown*/
 
 .dropdown-item a{
@@ -132,18 +147,13 @@ a:hover{
 }
 
 @media only screen and (max-width: 600px){
-    .navbar{
-        top: 0;
-        width: 100vw;
-        height: 5rem;
-    }
 
-    .home-link, #home{
+    .nav-item, .home-link, #home{
         display: none;
     }
 
     .sidebar{
-        display: flex;
+        display: none;
         flex-direction: column;
         position: fixed;
         top: 0;
@@ -154,10 +164,15 @@ a:hover{
         z-index: 100;
         align-items: flex-start;
         justify-content: flex-start;
-        background-image: var(--primary-gradient);
+        background-color:rgba(155, 155, 155, 0.416);
+        backdrop-filter: blur(5px);
     }
 
     .sidebar-item{
         width: 100%;
+    }
+
+    .sidebar-toggle-button{
+        display: block;
     }
 }

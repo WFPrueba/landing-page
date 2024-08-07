@@ -17,6 +17,9 @@
     <nav class="navbar background-primary-gradient" id="nav-bar">
         <h2 class="nav-bar-logo">Task Management</h2>
         <ul class="sidebar">
+            <li class="sidebar-item" onclick="closeSidebar()">
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" class="sidebar-toggle-button"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+            </li>
             <li class="sidebar-item">
                 <a href="#services">Services</a>
             </li>
@@ -77,6 +80,9 @@
                 <button>
                     <h2>Open App</h2>
                 </button>
+            </li>
+            <li class="nav-sidebar-toggle" onclick="openSidebar()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"  class="sidebar-toggle-button"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
             </li>
         </ul>
     </nav>
