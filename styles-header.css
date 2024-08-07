@@ -60,7 +60,7 @@ a {
     align-items: center;
 }
 
-.nav-item>button{
+.open-app{
     display: flex;
     align-items: center;
     color: var(--text);
@@ -72,7 +72,7 @@ a {
     transition: background 500ms ease-in-out, color 1000ms ease-in-out, border 500ms ease-in-out;
 }
 
-.nav-item>button:hover{
+.open-app:hover{
     background: var(--button-hover);
 }
 
@@ -85,13 +85,8 @@ a {
     display: none;
 }
 
-.sidebar-item {
-    height: 100%;
-    width: 100%;
-}
-
 a:hover{
-    background-color: white;
+    background-color: var(--link-hover);
 }
 
 .sidebar-toggle-button{
@@ -138,7 +133,7 @@ a:hover{
     margin-top: 3.2rem;
     padding: 0.5rem;
     box-shadow: rgba(2,8,20,0.1) 0px 0.175em 0.5em;
-    transform: translateX(-90%);
+    transform: translateX(-90%) translateY(80%);
     transition: opacity 0.5s ease-in-out, background 500ms ease-in-out;
 }
 
@@ -163,13 +158,15 @@ a:hover{
         width: 100vw;
         z-index: 100;
         align-items: flex-start;
-        justify-content: flex-start;
+        justify-content: center;
+        text-align: center;
         background-color:rgba(155, 155, 155, 0.416);
         backdrop-filter: blur(5px);
     }
 
     .sidebar-item{
         width: 100%;
+        height: 100%;
     }
 
     .sidebar-toggle-button{
